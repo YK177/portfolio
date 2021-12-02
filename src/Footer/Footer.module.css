@@ -1,5 +1,5 @@
 .footer {
-    height: 60px;
+    height: 80px;
     background: #252B42;
 }
 
@@ -8,5 +8,4 @@
     height: 100%;
     align-items: center;
     justify-content: center;
-    color: #fff;
 }

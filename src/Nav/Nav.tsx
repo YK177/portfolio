@@ -12,7 +12,7 @@ export const Nav = () => {
                     <a href="#" className={style.link}>Skills</a>
                 </li>
                 <li className={style.item}>
-                    <a href="#" className={style.link}>Works</a>
+                    <a href="#" className={style.link}>Projects</a>
                 </li>
                 <li className={style.item}>
                     <a href="#" className={style.link}>Contacts</a>

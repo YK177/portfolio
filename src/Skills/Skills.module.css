@@ -1,0 +1,11 @@
+.skills {
+    background: #17213C;
+    padding: 50px 0;
+}
+
+.body {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: flex-start;
+}

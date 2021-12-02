@@ -1,0 +1,24 @@
+.project {
+    flex: 0 0 30%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17213C;
+    flex-wrap: wrap;
+}
+
+.body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 15px;
+}
+
+.description {
+    padding: 20px 0;
+    line-height: 150%;
+    text-align: center;
+}

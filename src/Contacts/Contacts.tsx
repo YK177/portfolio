@@ -1,40 +1,40 @@
 import React from 'react'
-import style from './Contacts.module.css'
-import commonStyle from './../common/style/commonStyle.module.css'
+import style from './Contacts.module.scss'
+import commonStyle from '../common/style/commonStyle.module.scss'
 
 export const Contacts = () => {
     return (
-        <div className={style.contacts}>
+        <section className={style.contacts}>
             <div className={commonStyle.container}>
                 <h2 className={commonStyle.title}>Contact Me</h2>
-                <div className={style.body}>
-                    <form action="#" className={style.form}>
-                        <div className={style.line}>
-                            <input className={style.input}
+                <div className={style.contacts__body}>
+                    <form action="#" className={style.contacts__form}>
+                        <div className={style.contacts__line}>
+                            <input className={style.contacts__input}
                                    placeholder={'Enter Name'}
                                    type="text"/>
                         </div>
-                        <div className={style.line}>
-                            <input className={style.input}
+                        <div className={style.contacts__line}>
+                            <input className={style.contacts__input}
                                    placeholder={'Enter email'}
                                    type="email"/>
                         </div>
-                        <div className={style.line}>
-                            <input className={style.input}
+                        <div className={style.contacts__line}>
+                            <input className={style.contacts__input}
                                    placeholder={'Enter subject'}
                                    type="text"/>
                         </div>
                         <div className={style.line}>
-                            <textarea className={`${style.input} ${style.textarea}`}
+                            <textarea className={`${style.contacts__input} ${style.contacts__textarea}`}
                                       placeholder={'Enter message'}/>
                         </div>
-                        <div className={style.line}>
+                        <div className={style.contacts__line}>
                             <button className={commonStyle.btn} type={'submit'}>send</button>
                             <button className={commonStyle.btn} type={'reset'}>clear</button>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

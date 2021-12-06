@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './Project.module.css'
-import commonStyle from './../../common/style/commonStyle.module.css'
+import style from './Project.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
 
 type PropsType = {
     pictureURL: string
@@ -15,14 +15,14 @@ export const Project = (props: PropsType) => {
     }
 
     return (
-        <div className={style.project}>
-            <div style={background} className={style.body}>
+        <article className={style.project}>
+            <div style={background} className={style.project__body}>
                 <a href={'#'} target={'_blank'} className={commonStyle.btn}>Explore</a>
             </div>
             <h3 className={commonStyle.subtitle}>{props.subtitle}</h3>
-            <div className={style.description}>
+            <div className={style.project__description}>
                 {props.description}
             </div>
-        </div>
+        </article>
     )
 }

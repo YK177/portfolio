@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './Skills.module.css'
-import commonStyle from './../common/style/commonStyle.module.css'
+import style from './Skills.module.scss'
+import commonStyle from '../common/style/commonStyle.module.scss'
 import {Skill} from './Skill/Skill'
 
 export const Skills = () => {
@@ -42,7 +42,7 @@ export const Skills = () => {
         <section className={style.skills}>
             <div className={commonStyle.container}>
                 <h2 className={commonStyle.title}>My Skills</h2>
-                <div className={style.body}>
+                <div className={style.skills__body}>
                     {
                         skills.map(s => <Skill key={s.id}
                                                subtitle={s.subtitle}

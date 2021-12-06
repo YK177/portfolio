@@ -1,6 +1,6 @@
 import React from 'react'
-import style from './Projects.module.css'
-import commonStyle from './../common/style/commonStyle.module.css'
+import style from './Projects.module.scss'
+import commonStyle from '../common/style/commonStyle.module.scss'
 import {Project} from './Project/Project'
 
 export const Projects = () => {
@@ -18,13 +18,19 @@ export const Projects = () => {
             subtitle: 'to do list',
             description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sint?',
         },
+        {
+            id: '3',
+            pictureURL: 'https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
+            subtitle: 'counter',
+            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sint?',
+        },
     ]
 
     return (
         <section className={style.projects}>
             <div className={commonStyle.container}>
                 <h2 className={commonStyle.title}>My Projects</h2>
-                <div className={style.body}>
+                <div className={style.projects__body}>
                     {
                         propjects.map(p => <Project key={p.id}
                                                     pictureURL={p.pictureURL}

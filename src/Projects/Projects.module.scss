@@ -1,0 +1,13 @@
+.projects {
+  background: #252B42;
+  padding: 50px 0;
+
+
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+  }
+}

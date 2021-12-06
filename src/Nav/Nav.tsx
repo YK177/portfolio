@@ -1,21 +1,21 @@
 import React from 'react'
-import style from './Nav.module.css'
+import style from './Nav.module.scss'
 
 export const Nav = () => {
     return (
         <nav className={style.nav}>
-            <ul className={style.list}>
-                <li className={style.item}>
-                    <a href="#" className={style.link}>Main</a>
+            <ul className={style.nav__list}>
+                <li className={style.nav__item}>
+                    <a href="#" className={style.nav__link}>Main</a>
                 </li>
-                <li className={style.item}>
-                    <a href="#" className={style.link}>Skills</a>
+                <li className={style.nav__item}>
+                    <a href="#" className={style.nav__link}>Skills</a>
                 </li>
-                <li className={style.item}>
-                    <a href="#" className={style.link}>Projects</a>
+                <li className={style.nav__item}>
+                    <a href="#" className={style.nav__link}>Projects</a>
                 </li>
-                <li className={style.item}>
-                    <a href="#" className={style.link}>Contacts</a>
+                <li className={style.nav__item}>
+                    <a href="#" className={style.nav__link}>Contacts</a>
                 </li>
             </ul>
         </nav>

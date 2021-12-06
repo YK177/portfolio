@@ -1,0 +1,15 @@
+.skills {
+  background: #17213C;
+  padding: 50px 0;
+
+  @media (max-width: 767.98px) {
+    padding: 20px 0;
+  }
+
+  &__body {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 10px;
+  }
+}

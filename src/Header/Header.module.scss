@@ -1,10 +1,11 @@
 .header {
-    height: 80px;
-    background: #17213C;
-}
+  height: 80px;
+  background: #17213C;
 
-.content {
+  &__content {
     display: flex;
     height: 100%;
     align-items: center;
+  }
 }
+

@@ -1,26 +1,25 @@
 .skill {
-    padding: 20px;
-    flex: 1 0 50%;
-    max-width: 390px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  padding: 20px;
+  flex: 1 0 50%;
+  max-width: 390px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
-}
-
-.header {
+  &__header {
     padding: 25px 0;
-}
+  }
 
-.icon {
+  &__icon {
     width: 50px;
     height: 50px;
     background: #FF7B47;
     transform: rotate(45deg);
-}
+  }
 
-.description {
+  &__description {
     padding: 20px 0;
     line-height: 150%;
     text-align: center;
+  }
 }

@@ -1,12 +1,13 @@
 import React from 'react'
 import style from './Contacts.module.scss'
-import commonStyle from '../common/style/commonStyle.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
+import {Title} from '../common/Title/Title'
 
 export const Contacts = () => {
     return (
         <section className={style.contacts}>
             <div className={commonStyle.container}>
-                <h2 className={commonStyle.title}>Contact Me</h2>
+                <Title>Contact Me</Title>
                 <div className={style.contacts__body}>
                     <form action="#" className={style.contacts__form}>
                         <div className={style.contacts__line}>

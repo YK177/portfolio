@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Footer.module.scss'
-import commonStyle from '../common/style/commonStyle.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
 
 export const Footer = () => {
     return (

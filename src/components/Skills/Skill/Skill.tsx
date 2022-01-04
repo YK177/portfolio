@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Skill.module.scss'
-import commonStyle from '../../common/style/commonStyle.module.scss'
+import {Subtitle} from '../../common/Subtitle/Subtitle'
 
 type PropsType = {
     subtitle: string
@@ -13,7 +13,7 @@ export const Skill = (props: PropsType) => {
             <div className={style.skill__header}>
                 <div className={style.skill__icon}/>
             </div>
-            <h3 className={commonStyle.subtitle}>{props.subtitle}</h3>
+            <Subtitle>{props.subtitle}</Subtitle>
             <div className={style.skill__description}>
                 {props.description}
             </div>

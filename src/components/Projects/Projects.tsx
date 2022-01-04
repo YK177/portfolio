@@ -1,11 +1,12 @@
 import React from 'react'
 import style from './Projects.module.scss'
-import commonStyle from '../common/style/commonStyle.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
 import {Project} from './Project/Project'
+import {Title} from '../common/Title/Title'
 
 export const Projects = () => {
 
-    const propjects = [
+    const projects = [
         {
             id: '1',
             pictureURL: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
@@ -29,13 +30,13 @@ export const Projects = () => {
     return (
         <section className={style.projects}>
             <div className={commonStyle.container}>
-                <h2 className={commonStyle.title}>My Projects</h2>
+                <Title>My Projects</Title>
                 <div className={style.projects__body}>
                     {
-                        propjects.map(p => <Project key={p.id}
-                                                    pictureURL={p.pictureURL}
-                                                    subtitle={p.subtitle}
-                                                    description={p.description}/>)
+                        projects.map(p => <Project key={p.id}
+                                                   pictureURL={p.pictureURL}
+                                                   subtitle={p.subtitle}
+                                                   description={p.description}/>)
                     }
                 </div>
             </div>

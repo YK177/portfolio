@@ -1,11 +1,11 @@
 import React from 'react'
 import commonStyle from './common/style/commonStyle.module.scss'
-import {Header} from './Header/Header'
-import {Footer} from './Footer/Footer'
-import {Main} from './Main/Main'
-import {Skills} from './Skills/Skills'
-import {Projects} from './Projects/Projects'
-import {Contacts} from './Contacts/Contacts'
+import {Skills} from './components/Skills/Skills'
+import {Projects} from './components/Projects/Projects'
+import {Header} from './components/Header/Header'
+import {Main} from './components/Main/Main'
+import {Contacts} from './components/Contacts/Contacts'
+import {Footer} from './components/Footer/Footer'
 
 function App() {
     return (

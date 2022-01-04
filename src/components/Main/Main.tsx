@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Main.module.scss'
-import commonStyle from '../common/style/commonStyle.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
 
 export const Main = () => {
     return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import style from './Header.module.scss'
-import commonStyle from '../common/style/commonStyle.module.scss'
+import commonStyle from '../../common/style/commonStyle.module.scss'
 import {Nav} from '../Nav/Nav'
 
 export const Header = () => {

@@ -25,6 +25,77 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: 'iconfont';
+  src: url('./assets/fonts/iconfont.woff2') format('woff2'),
+  url('./assets/fonts/iconfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  font-family: 'iconfont' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-codewars:before {
+  content: "\e901";
+  color: #fff;
+}
+
+.icon-css3:before {
+  content: "\e902";
+  color: #fff;
+}
+
+.icon-github:before {
+  content: "\e903";
+  color: #fff;
+}
+
+.icon-html5:before {
+  content: "\e904";
+  color: #fff;
+}
+
+.icon-js:before {
+  content: "\e905";
+  color: #fff;
+}
+
+.icon-linkedin:before {
+  content: "\e906";
+  color: #fff;
+}
+
+.icon-react:before {
+  content: "\e907";
+  color: #fff;
+}
+
+.icon-redux:before {
+  content: "\e908";
+  color: #fff;
+}
+
+.icon-telegram:before {
+  content: "\e909";
+  color: #fff;
+}
+
+.icon-ts:before {
+  content: "\e90a";
+  color: #fff;
+}
+
 /*null style*/
 * {
   padding: 0;
@@ -186,8 +257,8 @@ body {
   text-transform: uppercase;
   letter-spacing: 2px;
   padding-bottom: 3px;
-  //background: none;
-  //border: none;
+  background: none;
+  border: none;
   display: inline-flex;
   font-weight: 300;
   position: relative;

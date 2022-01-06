@@ -1,6 +1,13 @@
 .header {
   height: 80px;
-  background: #17213C;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  z-index: 111;
 
   &__content {
     display: flex;

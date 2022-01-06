@@ -1,0 +1,214 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik-Light.woff2') format('woff2'),
+  url('./assets/fonts/Rubik-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik-Regular.woff2') format('woff2'),
+  url('./assets/fonts/Rubik-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('./assets/fonts/Rubik-Bold.woff2') format('woff2'),
+  url('./assets/fonts/Rubik-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/*null style*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  line-height: 1;
+  font-size: 16px;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: Rubik, sans-serif;
+  color: #c1c1c1;
+  background: #000;
+  line-height: 150%
+}
+
+#root {
+  height: 100%;
+}
+
+.right-effects {
+  position: fixed;
+  top: 50px;
+  right: 0;
+  bottom: auto;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #f64f59;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.left-effects {
+  position: fixed;
+  bottom: 50px;
+  left: 0;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: #c471ed;
+  -webkit-filter: blur(100px);
+  filter: blur(100px);
+  opacity: 0.25;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.page {
+  flex: 1 1 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media (max-width: 1182px) {
+    max-width: 970px;
+  }
+  @media (max-width: 991.98px) {
+    max-width: 750px;
+  }
+  @media (max-width: 767.98px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.btn {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-bottom: 3px;
+  //background: none;
+  //border: none;
+  display: inline-flex;
+  font-weight: 300;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: auto;
+    right: 0;
+    height: 2px;
+    width: 0;
+    background-image: linear-gradient(to left, #12c2e9, #c471ed, #f64f59);
+    transition: ease all 0.35s;
+  }
+
+  &:hover:after {
+    right: auto;
+    left: 0;
+    width: 100%;
+  }
+}
+
+/*--------------------*/

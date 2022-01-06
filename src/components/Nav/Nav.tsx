@@ -6,7 +6,7 @@ export const Nav = () => {
         <nav className={style.nav}>
             <ul className={style.nav__list}>
                 <li className={style.nav__item}>
-                    <a href="#" className={style.nav__link}>Main</a>
+                    <a href="#" className={`${style.nav__link} ${style.active}`}>Main</a>
                 </li>
                 <li className={style.nav__item}>
                     <a href="#" className={style.nav__link}>Skills</a>

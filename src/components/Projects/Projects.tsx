@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Projects.module.scss'
-import commonStyle from '../../common/style/commonStyle.module.scss'
 import {Project} from './Project/Project'
 import {Title} from '../common/Title/Title'
 
@@ -29,7 +28,7 @@ export const Projects = () => {
 
     return (
         <section className={style.projects}>
-            <div className={commonStyle.container}>
+            <div className='container'>
                 <Title>My Projects</Title>
                 <div className={style.projects__body}>
                     {

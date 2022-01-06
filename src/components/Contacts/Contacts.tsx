@@ -1,12 +1,11 @@
 import React from 'react'
 import style from './Contacts.module.scss'
-import commonStyle from '../../common/style/commonStyle.module.scss'
 import {Title} from '../common/Title/Title'
 
 export const Contacts = () => {
     return (
         <section className={style.contacts}>
-            <div className={commonStyle.container}>
+            <div className='container'>
                 <Title>Contact Me</Title>
                 <div className={style.contacts__body}>
                     <form action="#" className={style.contacts__form}>
@@ -30,8 +29,8 @@ export const Contacts = () => {
                                       placeholder={'Enter message'}/>
                         </div>
                         <div className={style.contacts__line}>
-                            <button className={commonStyle.btn} type={'submit'}>send</button>
-                            <button className={commonStyle.btn} type={'reset'}>clear</button>
+                            <button className='btn' type={'submit'}>send</button>
+                            <button className='btn' type={'reset'}>clear</button>
                         </div>
                     </form>
                 </div>

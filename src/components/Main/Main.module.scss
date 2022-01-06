@@ -1,10 +1,5 @@
 .main {
-  background: #252B42;
-  padding: 50px 0;
-
-  @media (max-width: 767.98px) {
-    padding: 20px 0;
-  }
+  padding: 100px 0;
 
 
   &__content {
@@ -20,7 +15,8 @@
   &__body {
     flex: 1 1 auto;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
     @media (max-width: 767.98px) {
       flex: 1 1 100%;
@@ -28,11 +24,12 @@
   }
 
   &__mainTitle {
-    font-size: 44px;
+    font-size: 60px;
     font-weight: 700;
-    line-height: 200%;
+    line-height: 120%;
 
     @media (max-width: 767.98px) {
+      font-size: 50px;
       flex: 1 1 auto;
       text-align: center;
       line-height: 140%;
@@ -40,16 +37,22 @@
     }
 
     @media (max-width: 479.98px) {
-      font-size: 38px;
+      font-size: 40px;
     }
 
     span {
-      color: #FF7B47;
+      background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 
+  &__resume {
+    padding: 10px 0;
+  }
+
   &__image {
-    flex: 0 0 30%;
+    flex: 0 0 40%;
 
     @media (max-width: 991.98px) {
       flex: 0 0 40%;
@@ -60,13 +63,14 @@
     }
 
     @media (max-width: 479.98px) {
-        flex: 0 0 100%;
+      flex: 0 0 100%;
     }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 20%;
     }
   }
 }

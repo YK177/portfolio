@@ -1,6 +1,5 @@
 import React from 'react'
 import style from './Skills.module.scss'
-import commonStyle from '../../common/style/commonStyle.module.scss'
 import {Skill} from './Skill/Skill'
 import {Title} from '../common/Title/Title'
 
@@ -41,7 +40,7 @@ export const Skills = () => {
 
     return (
         <section className={style.skills}>
-            <div className={commonStyle.container}>
+            <div className='container'>
                 <Title>My Skills</Title>
                 <div className={style.skills__body}>
                     {

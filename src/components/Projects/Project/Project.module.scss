@@ -1,24 +1,35 @@
 .project {
-  flex: 0 0 30%;
-  padding: 10px;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: rgb(23, 33, 60);
-  flex-wrap: wrap;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-radius: 15px;
+  overflow: hidden;
 
-  &__body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  &__image {
     width: 100%;
     height: 200px;
-    margin-bottom: 15px;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      justify-self: flex-end;
+    }
   }
 
   &__description {
     padding: 20px 0;
     line-height: 150%;
-    text-align: center;
+    flex: 1 1 auto;
   }
+
+
 }

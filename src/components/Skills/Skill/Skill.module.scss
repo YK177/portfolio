@@ -1,5 +1,4 @@
 .skill {
-  padding: 20px;
   flex: 1 0 50%;
   max-width: 390px;
   display: flex;
@@ -11,10 +10,18 @@
   }
 
   &__icon {
-    width: 50px;
-    height: 50px;
-    background: #FF7B47;
-    transform: rotate(45deg);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      font-size: 60px;
+      background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
   }
 
   &__description {

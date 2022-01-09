@@ -5,32 +5,31 @@ import {Title} from '../common/Title/Title'
 export const Contacts = () => {
     return (
         <section className={style.contacts}>
-            <div className='container'>
-                <Title>Contact Me</Title>
+            <div className="container">
+                <Title>Get in touch</Title>
                 <div className={style.contacts__body}>
                     <form action="#" className={style.contacts__form}>
                         <div className={style.contacts__line}>
                             <input className={style.contacts__input}
-                                   placeholder={'Enter Name'}
+                                   placeholder={'Name *'}
                                    type="text"/>
                         </div>
                         <div className={style.contacts__line}>
                             <input className={style.contacts__input}
-                                   placeholder={'Enter email'}
+                                   placeholder={'Email *'}
                                    type="email"/>
                         </div>
                         <div className={style.contacts__line}>
                             <input className={style.contacts__input}
-                                   placeholder={'Enter subject'}
+                                   placeholder={'Subject *'}
                                    type="text"/>
                         </div>
-                        <div className={style.line}>
-                            <textarea className={`${style.contacts__input} ${style.contacts__textarea}`}
-                                      placeholder={'Enter message'}/>
+                        <div className={style.contacts__line}>
+                            <textarea className={style.contacts__input}
+                                      placeholder={'Your message *'}/>
                         </div>
                         <div className={style.contacts__line}>
-                            <button className='btn' type={'submit'}>send</button>
-                            <button className='btn' type={'reset'}>clear</button>
+                            <button className="btn" type={'submit'}>send message</button>
                         </div>
                     </form>
                 </div>

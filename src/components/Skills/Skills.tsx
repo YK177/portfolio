@@ -8,45 +8,49 @@ export const Skills = () => {
     const skills = [
         {
             id: '1',
-            subtitle: 'HTML',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-react',
+            subtitle: 'React',
         },
         {
             id: '2',
-            subtitle: 'CSS',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-redux',
+            subtitle: 'Redux',
         },
         {
             id: '3',
-            subtitle: 'JavaScript',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-ts',
+            subtitle: 'TypeScript',
         },
         {
             id: '4',
-            subtitle: 'TypeScript',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-js',
+            subtitle: 'JavaScript',
         },
         {
             id: '5',
-            subtitle: 'React',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-html5',
+            subtitle: 'HTML',
         },
         {
             id: '6',
-            subtitle: 'Redux',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur, eum.'
+            icon: 'icon-css3',
+            subtitle: 'CSS',
         },
+
+
     ]
 
     return (
         <section className={style.skills}>
-            <div className='container'>
+            <div className="container">
                 <Title>My Skills</Title>
                 <div className={style.skills__body}>
                     {
-                        skills.map(s => <Skill key={s.id}
-                                               subtitle={s.subtitle}
-                                               description={s.description}/>)
+                        skills.map(s => <Skill
+                            key={s.id}
+                            icon={s.icon}
+                            subtitle={s.subtitle}
+                        />)
                     }
                 </div>
             </div>

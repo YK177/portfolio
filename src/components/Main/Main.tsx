@@ -14,8 +14,18 @@ export const Main = () => {
                         I'm Yuri Kotenev <br/>
                         <span>Frontend Developer</span>
                     </h1>
-                    <div className={style.main__resume}>
-                        <a href="#" className="btn">Browse resume </a>
+                    <div className={style.main__box}>
+                        <div className={style.main__links}>
+                            <a href="#" target="_blank" className="icon-telegram"/>
+                            <a href="#" target="_blank" className="icon-github"/>
+                            <a href="#" target="_blank" className="icon-linkedin"/>
+                            <a href="#" target="_blank" className="icon-codewars"/>
+                        </div>
+                        <div className={style.main__resume}>
+                            <a href="#" className="btn">
+                                Browse resume
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <div className={style.main__image}>

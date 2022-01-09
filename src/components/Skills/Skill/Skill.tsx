@@ -3,20 +3,19 @@ import style from './Skill.module.scss'
 import {Subtitle} from '../../common/Subtitle/Subtitle'
 
 type PropsType = {
+    icon: string
     subtitle: string
-    description: string
 }
 
 export const Skill = (props: PropsType) => {
     return (
         <article className={style.skill}>
             <div className={style.skill__header}>
-                <div className={style.skill__icon}/>
+                <div className={style.skill__icon}>
+                    <span className={props.icon}/>
+                </div>
             </div>
             <Subtitle>{props.subtitle}</Subtitle>
-            <div className={style.skill__description}>
-                {props.description}
-            </div>
         </article>
     )
 }

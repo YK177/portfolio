@@ -10,25 +10,25 @@ export const Projects = () => {
             id: '1',
             pictureURL: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
             subtitle: 'social network',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sint?',
+            description: 'React, Redux, TypeScript, class components, redux-thunk, REST API, axios, formik',
         },
         {
             id: '2',
             pictureURL: 'https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
             subtitle: 'to do list',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sint?',
+            description: 'React, Redux, TypeScript, redux-toolkit, function components, hooks, saga, REST API, axios, Jest, Material UI',
         },
         {
             id: '3',
             pictureURL: 'https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
             subtitle: 'counter',
-            description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, sint?',
+            description: 'React, Redux, TypeScript, local storage',
         },
     ]
 
     return (
         <section className={style.projects}>
-            <div className='container'>
+            <div className="container">
                 <Title>My Projects</Title>
                 <div className={style.projects__body}>
                     {

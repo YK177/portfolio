@@ -46,54 +46,59 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-arrow:before {
+  content: "\ea3b";
+  color: #c1c1c1;
+}
+
 .icon-codewars:before {
   content: "\e901";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-css3:before {
   content: "\e902";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-github:before {
   content: "\e903";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-html5:before {
   content: "\e904";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-js:before {
   content: "\e905";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-linkedin:before {
   content: "\e906";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-react:before {
   content: "\e907";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-redux:before {
   content: "\e908";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-telegram:before {
   content: "\e909";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 .icon-ts:before {
   content: "\e90a";
-  color: #fff;
+  color: #c1c1c1;
 }
 
 /*null style*/
@@ -260,8 +265,26 @@ body {
   background: none;
   border: none;
   display: inline-flex;
+  width: fit-content;
   font-weight: 300;
   position: relative;
+
+  &_small {
+    font-size: 12px;
+  }
+
+  &:before {
+    content: '\ea3b';
+    font-family: 'iconfont';
+    text-align: right;
+    position: absolute;
+    top: 0;
+    right: -1.4em;
+    width: 1.2em;
+    height: 100%;
+    font-size: inherit;
+    color: #c1c1c1;
+  }
 
   &:after {
     content: "";
@@ -279,6 +302,12 @@ body {
     right: auto;
     left: 0;
     width: 100%;
+  }
+
+  &:hover:before {
+    background: linear-gradient(to right, #12c2e9, #f64f59, #f64f59);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 

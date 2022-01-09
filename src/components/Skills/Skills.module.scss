@@ -1,14 +1,27 @@
 .skills {
-  //background: #17213C;
-  padding: 50px 0;
+  padding: 100px 0;
+  position: relative;
 
   @media (max-width: 767.98px) {
-    padding: 20px 0;
+    padding: 50px 0;
+  }
+
+  &:before{
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 1px;
+    left: 0;
+    right: 0;
+    max-width: 1290px;
+    margin: 0 auto;
+    background: #fff;
+    opacity: 0.1;
   }
 
   &__body {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     justify-items: center;
     grid-gap: 10px;
   }

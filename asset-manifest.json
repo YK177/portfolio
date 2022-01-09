@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.8a5f1881.css",
-    "main.js": "/portfolio/static/js/main.b8d9611d.js",
+    "main.css": "/portfolio/static/css/main.3f7bf571.css",
+    "main.js": "/portfolio/static/js/main.20727505.js",
     "static/js/787.b9ec5bb0.chunk.js": "/portfolio/static/js/787.b9ec5bb0.chunk.js",
     "static/media/avatar.png": "/portfolio/static/media/avatar.b0a73284756688dec4c1.png",
     "static/media/Rubik-Light.woff": "/portfolio/static/media/Rubik-Light.e9aaed23f568c59ae6d9.woff",
     "static/media/Rubik-Regular.woff": "/portfolio/static/media/Rubik-Regular.c1c29ef3e1f3a34c40aa.woff",
-    "static/media/Rubik-Bold.woff": "/portfolio/static/media/Rubik-Bold.764df3e8795b68ec2b13.woff",
+    "static/media/Rubik-Medium.woff": "/portfolio/static/media/Rubik-Medium.36bccd516d24a746cad3.woff",
     "static/media/Rubik-Light.woff2": "/portfolio/static/media/Rubik-Light.937feb12f444d6c7f14f.woff2",
     "static/media/Rubik-Regular.woff2": "/portfolio/static/media/Rubik-Regular.0e4deba8e3919811434d.woff2",
-    "static/media/Rubik-Bold.woff2": "/portfolio/static/media/Rubik-Bold.1d733ee068d07f3f1a8d.woff2",
+    "static/media/Rubik-Medium.woff2": "/portfolio/static/media/Rubik-Medium.2c6b43a40a5478a3ab26.woff2",
     "static/media/iconfont.woff": "/portfolio/static/media/iconfont.d8ad67d5173a93cc9151.woff",
     "static/media/iconfont.woff2": "/portfolio/static/media/iconfont.07ff2687b384260f2590.woff2",
     "index.html": "/portfolio/index.html",
-    "main.8a5f1881.css.map": "/portfolio/static/css/main.8a5f1881.css.map",
-    "main.b8d9611d.js.map": "/portfolio/static/js/main.b8d9611d.js.map",
+    "main.3f7bf571.css.map": "/portfolio/static/css/main.3f7bf571.css.map",
+    "main.20727505.js.map": "/portfolio/static/js/main.20727505.js.map",
     "787.b9ec5bb0.chunk.js.map": "/portfolio/static/js/787.b9ec5bb0.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8a5f1881.css",
-    "static/js/main.b8d9611d.js"
+    "static/css/main.3f7bf571.css",
+    "static/js/main.20727505.js"
   ]
 }

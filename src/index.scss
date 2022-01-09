@@ -101,6 +101,24 @@
   color: #c1c1c1;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #12c2e9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f64f59;
+
+}
+
+html {
+  scrollbar-color: #f64f59 #12c2e9;
+  scrollbar-width: thin;
+}
+
 /*null style*/
 * {
   padding: 0;

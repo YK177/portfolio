@@ -46,6 +46,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-phone:before {
+  content: "\e942";
+  color: #c1c1c1;
+}
+
+.icon-mail:before {
+  content: "\ea83";
+  color: #c1c1c1;
+}
+
 .icon-arrow:before {
   content: "\ea3b";
   color: #c1c1c1;
@@ -111,7 +121,6 @@
 
 ::-webkit-scrollbar-thumb {
   background: #f64f59;
-
 }
 
 html {

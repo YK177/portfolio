@@ -11,23 +11,26 @@ export const Projects = () => {
             pictureURL: 'https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
             subtitle: 'social network',
             description: 'React, Redux, TypeScript, class components, redux-thunk, REST API, axios, formik',
+            link: 'https://github.com/YK177/social-network',
         },
         {
             id: '2',
             pictureURL: 'https://images.pexels.com/photos/3243/pen-calendar-to-do-checklist.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260',
             subtitle: 'to do list',
             description: 'React, Redux, TypeScript, redux-toolkit, function components, hooks, saga, REST API, axios, Jest, Material UI',
+            link: 'https://github.com/YK177/todolist-app',
         },
         {
             id: '3',
             pictureURL: 'https://images.pexels.com/photos/220301/pexels-photo-220301.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
             subtitle: 'counter',
             description: 'React, Redux, TypeScript, local storage',
+            link: 'https://github.com/YK177/counter',
         },
     ]
 
     return (
-        <section className={style.projects}>
+        <section id="projects" className={style.projects}>
             <div className="container">
                 <Title>My Projects</Title>
                 <div className={style.projects__body}>
@@ -35,7 +38,9 @@ export const Projects = () => {
                         projects.map(p => <Project key={p.id}
                                                    pictureURL={p.pictureURL}
                                                    subtitle={p.subtitle}
-                                                   description={p.description}/>)
+                                                   description={p.description}
+                                                   link={p.link}
+                        />)
                     }
                 </div>
             </div>

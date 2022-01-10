@@ -41,7 +41,7 @@ export const Skills = () => {
     ]
 
     return (
-        <section className={style.skills}>
+        <section id="skills" className={style.skills}>
             <div className="container">
                 <Title>My Skills</Title>
                 <div className={style.skills__body}>

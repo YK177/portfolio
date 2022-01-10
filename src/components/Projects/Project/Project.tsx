@@ -6,6 +6,7 @@ type PropsType = {
     pictureURL: string
     subtitle: string
     description: string
+    link:string
 }
 
 export const Project = (props: PropsType) => {
@@ -22,7 +23,7 @@ export const Project = (props: PropsType) => {
                 <p className={style.project__description}>
                     {props.description}
                 </p>
-                <a href={'#'} target={'_blank'} className="btn btn_small">View project</a>
+                <a href={props.link} target={'_blank'} className="btn btn_small">View project</a>
             </div>
         </article>
     )

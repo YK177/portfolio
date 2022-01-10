@@ -1,0 +1,39 @@
+.form {
+  flex: 1 1 auto;
+
+  &__line {
+    padding: 10px 0;
+    display: flex;
+
+    button {
+      justify-self: flex-start;
+    }
+  }
+
+  &__input {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 0.775rem 1.05rem;
+    box-shadow: none;
+    color: #fff;
+
+    &:focus {
+      border: 1px solid #c471ed;
+    }
+  }
+
+  textarea {
+    height: 150px;
+  }
+}
